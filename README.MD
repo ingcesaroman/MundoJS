@@ -22,6 +22,7 @@
    null -> ningun valor alojado en la variable\
    undefined -> Variable sin valor declarado
    
+   
 ## Variables
 
 * Sintaxis: \
@@ -34,6 +35,37 @@ var nombreVariable = valor;
     * console.log();
     * prompt();
 
-## Condicionales
+## Comparison Operators
+Slides [Comparison](http://webdev.slides.com/coltsteele/deck-4-47#/2)
+Ejemplo x = 5
 
-## loops
+| Operator | Nombre | Ejemplo | Result |
+| -------| -------------- | --------- | ----- |
+| **>**  | Mayor a        | **x>10**  | False |
+| **>=** | Igual o mayor  | **x>=10** | True  |
+| **<**  | Menor a        | **x<-50** | False |
+| **<=** | Igual o menor  | **x>=100**| True  |
+| **==** | Igual a        | **x==5**   | True  |
+| **!=** | No sea igual a | **x!=10** | True  |
+| **===** | Igual a (Valor y tipo)| **x===5**   | False |
+| **!==** | No sea igual a (Valor y tipo) | **x!==5** | True  |
+
+* [operadores logicos](http://webdev.slides.com/coltsteele/deck-4-47#/5)
+
+&& // AND
+|| // OR
+! // NOT
+
+
+## Condicional
+* if
+* if elase
+* alse
+
+## Loops
+slides [loops](http://webdev.slides.com/coltsteele/loops-58)
+* DRY principles\
+Don't repeat yourself (don't write 2 equal lines of code)
+* Sintaxis\
+    * while->`while(somecondition) {//run some code}`
+    * for->`for(init; condition; step){//run some code}`
