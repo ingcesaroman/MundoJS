@@ -69,3 +69,7 @@ Don't repeat yourself (don't write 2 equal lines of code)
 * Sintaxis\
     * while->`while(somecondition) {//run some code}`
     * for->`for(init; condition; step){//run some code}`
+    
+# Function (Funciones)
+* function Para lineas de codigo que se repitan y puedan resumirse en una sola
+* Argunments son function con un valor a introducir y ejecutar esas lineas de codigo
