@@ -69,7 +69,51 @@ Don't repeat yourself (don't write 2 equal lines of code)
 * Sintaxis\
     * while->`while(somecondition) {//run some code}`
     * for->`for(init; condition; step){//run some code}`
+    * ForEach -> `varName.forEach(fuction(var){//run some code});`\
+    run some code x number of times base on the array data
     
 # Function (Funciones)
 * function Para lineas de codigo que se repitan y puedan resumirse en una sola
 * Argunments son function con un valor a introducir y ejecutar esas lineas de codigo
+* JS Scope:
+  * scope global:\
+  variable declarado en scope global se puede ocupar dentro de una funcion (padre `[var]` -> hijo `[function]`)   
+  * scope special (child):\
+  las variables declaradas dentro de una funcion son validas solo dentro de esa funcion\
+  No puden ser usadas en otra funcion o scope global.
+* Higher Order Functions\
+  Son las funciones que toman una funcion como argumento o regresan una  funcion como respuesta.
+  
+  ## Array
+  * Que son?\
+  Agrupar in grupo de informacion en una sola linea de cosigo o grupo
+  * Sintaxis\
+  `var friends = []` o `var friends = new Array()`
+  * propiedades\
+  `friends.length` //cantidad de datos almacenados
+  * Methods (Metodos)
+    * Push & Pop\
+      Push -> Egregar dato al final de la cadena array ocupada cadena.push ("newdata") `varName.push();`\
+      Pop ->  Extrae datos del array y podemos hacer algo diferente con esa info `varName.pop();`
+    * Shift & unshift\
+      Shift -> Extrae el primer dato del array `varName.shift();`\
+      Unshift -> agregar dato nuevo al inicio del array `varName.unshift();`
+     * IndexOf\
+     ayuda a encontrar un dato especifico y devuelve la ubicacion del mismo --> `varName.indecOf();`
+     * Slice
+     Copia un dato especifico del array -> `varName.slice();`
+     * splice\
+     Elimina un dato speficico de la cadena de datos array -> `varName.splice(index, 1);`
+     
+     ## Object (objetos)
+     * Declarar informacion en forma de objetos:\
+     `var person = {
+        name: "Travis",
+        age: 21,
+        city: "LA"
+      };`
+      * Consultar o llamar informacion almacenada
+      `console.log(person["name""]);` o `console.log(person.name);`
+      
+     
+     
