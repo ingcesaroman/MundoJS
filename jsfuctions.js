@@ -21,3 +21,13 @@ function kebabToSnake(myStr){
     return newStr;
 }
 //kebabToSnake();
+
+//Activar boton que cambie el fondo
+console.log("conectado");
+alert("conectado!");
+var button = document.getElementsByTagName("button");
+
+button.addEventListener("click", function(){
+    alert("conectado!!")
+})
+//boton.style.background = "blue";

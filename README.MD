@@ -115,5 +115,50 @@ Don't repeat yourself (don't write 2 equal lines of code)
       * Consultar o llamar informacion almacenada
       `console.log(person["name""]);` o `console.log(person.name);`
       
-     
-     
+# DOM (tiempo de conbinar HTML, CSS, JS) 
+* Definicion: Document Object Model es la interface entre JS y HTML+CSS [slides](http://webdev.slides.com/coltsteele/intro-to-the-dom-70#/)
+    * hay dos formas de consultarlo dentro de la consola de chrome `document` o `console.dir(document)` 
+* Editar y Manipular elementos en HTML con JS
+    * Seleccionar (Select):\
+     para editar una parte del codigo se tiene que encontrar el elemento atraves de un selector desde la propiedad document.querySelector("h1");
+    * Manipular (Manipulate):\
+    `h1.style.color = "pink";` variable.propiedad.propiedad de la propiedad = "editar ppropiedad"; 
+
+## Select
+* [slides](http://webdev.slides.com/coltsteele/deck-30-71#/)
+* slectors usando document\
+    docuemtn.url\
+    document.link     
+    document.body\
+    document.head
+* Usando Metodos (Methods)\
+    `document.getElementByid()`\
+    `document.getElementsByClassName()`\
+    `document.getElementsByTagName()`\
+    `document.querySelector(.class o #id)`\
+    `document.querySelectorAll()`\
+    Adicional [0] -> **para seleccionar el primer elementeo similar a un array** 
+
+## Manipulacion (Manipulation) \
+
+* changing an elements style
+* adding/removing classes
+* changing the content of a tag
+* changing attributes (src, href, etc.)
+* varName.textContent (filta solo el texto que exite dento de la variable encontrada)
+* varName.innerHTML (filta el texto junto con los tags HTML)
+* varName.getAttribute("href" or "src")\
+    para cambiar el atributo `varName.setAttribute("href" o "scr", "newlink fro src or href")`
+
+## DOM Events (Making things interactive)
+* [slides](http://webdev.slides.com/coltsteele/dom-events-73#/)
+* Lista de [eventos](https://developer.mozilla.org/es/docs/Web/Events)
+* Syntax\
+`element.addEventListener(type, funtionToCall());`
+* Clicking on a button\
+    `document.button.classList.toggle("")`
+* Hovering over a link
+`element.addEventListener("mouseover", funtionToCall());`
+`element.addEventListener("mouseout  ", funtionToCall());`    
+* Dragging and Dropping
+* Pressing the Enter key
