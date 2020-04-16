@@ -162,3 +162,35 @@ Don't repeat yourself (don't write 2 equal lines of code)
 `element.addEventListener("mouseout  ", funtionToCall());`    
 * Dragging and Dropping
 * Pressing the Enter key
+
+## jQuery libreria
+* Agregar a tu documento js
+descargar y alojar en una carpeta como libreria o ocupar [CDN](https://code.jquery.com/jquery/)\
+`<script
+   src="https://code.jquery.com/jquery-3.4.1.js"
+   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+   crossorigin="anonymous"></script>`
+* jQuery o $ -> en la consola para pobar libreria en la consola
+
+### Selector w/jQuery
+* $("Selector") -> e.g. `$("img"), $(".img"), $("#imag), $("li a")`
+* editar css -> `$("li").css("color","blue");`
+* id & Clases -> `$("div"), $("div.className"), $("#idName"), ("div:first") or ("div:first-of-type")`
+
+### Metodos
+* todos los metodos [Methods]((https://api.jquery.com/))
+    * val()
+    * text()
+    * attr()
+    * html()
+    * add()
+    * remove()
+    * toggle()
+    
+### Eventos con jQuery
+* todos los Eventos [Events](https://api.jquery.com/category/events/)
+    * click `$('tag').click(fuction(){//some code})`
+    * keypress `$('tag').keypress(fuction(){//some code})`\
+    [keyCode](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
+    * on() \
+    el evento mas usado en jQuery
